@@ -1,9 +1,109 @@
-# Auther : Saideep Bhange
-# Modern Python Developer Roadmap — README
+# Modern Python Developer Roadmap
 
-This repository is your guided path to becoming a modern Python developer and building a comprehensive capstone project that ties everything together.
+Author: Saideep Bhange
+
+This repository is a practical Python learning resource with examples and notes on Python concepts, data structures, and development tools. The roadmap and capstone below describe future learning goals, not completed projects.
 
 > Source inspiration: Python Developer Roadmap (roadmap.sh) PDF uploaded alongside this repo.
+
+## Repository Structure
+
+```text
+PythonCodes/
+├── README.md
+├── basics/
+│   ├── README.md
+│   ├── Basic Syntax.py
+│   ├── Variables and Data Types.py
+│   ├── Conditionals.py
+│   ├── TypeCasting.py
+│   ├── Exceptions.py
+│   ├── FunctionsBuiltinFunctions.py
+│   └── Loops.py
+├── data_structures_algorithms/
+│   ├── README.md
+│   ├── collections/
+│   │   ├── README.md
+│   │   ├── Lists.py
+│   │   ├── Tuples.py
+│   │   ├── Sets.py
+│   │   └── Dictionaries.py
+│   ├── arrays_linked_lists/
+│   │   ├── README.md
+│   │   ├── Arrays.py
+│   │   └── LinkedList.py
+│   ├── binary_search_tree.py
+│   ├── HashTable.py
+│   ├── Heaps_Stacks_Queues.py
+│   ├── Recursion.py
+│   └── sorting_algorithms.py
+├── object_oriented_programming/
+│   ├── README.md
+│   ├── Classes.py
+│   ├── Inheritance.py
+│   └── methods_dunder.py
+├── python_features/
+│   ├── README.md
+│   ├── Decorators.py
+│   ├── Iterators.py
+│   ├── Lambdas.py
+│   ├── RegularExpressions.py
+│   └── modules/
+│       ├── README.md
+│       ├── Modules.py
+│       └── my_module.py
+├── development_tools/
+│   ├── README.md
+│   ├── common_packages_examples.py
+│   ├── Environments.py
+│   ├── package_managers.py
+│   ├── Sphinx.py
+│   ├── StaticTyping.py
+│   └── Testing.py
+├── concurrency/
+│   ├── README.md
+│   └── concurrency.py
+└── devcontainer/
+	└── devcontainer.json
+```
+
+## Learning Path
+
+1. [Python basics](basics/README.md): syntax, variables, control flow, and functions.
+2. [Data structures and algorithms](data_structures_algorithms/README.md): collections, arrays, trees, and algorithms.
+3. [Object-oriented programming](object_oriented_programming/README.md): classes, inheritance, and special methods.
+4. [Python features](python_features/README.md): decorators, iterators, regular expressions, and modules.
+5. [Development tools](development_tools/README.md): environments, packages, typing, documentation, and testing.
+6. [Concurrency](concurrency/README.md): threads, processes, and asynchronous tasks.
+
+### Learning Workflow
+
+```mermaid
+flowchart LR
+	Basics --> Data[Data structures and algorithms]
+	Data --> OOP[Object-oriented programming]
+	OOP --> Features[Python features]
+	Features --> Tools[Development tools]
+	Tools --> Concurrency
+	Concurrency --> Future[Future frameworks and capstone]
+```
+
+### Run an Example
+
+Install Python 3, open a terminal at the repository root, and run an example using its path:
+
+```bash
+python "basics/Exceptions.py"
+```
+
+Read each example before running it: some are reference notes, some demonstrate errors or require input, and some perform file operations. Individual topic guides identify known special requirements. Third-party tools mentioned in the notes are optional unless you choose to try them.
+
+```mermaid
+flowchart LR
+	A[Choose a topic] --> B[Read its README and example]
+	B --> C[Run the example with Python]
+	C --> D[Inspect output and experiment]
+```
 
 ## 🎯 Goals
 - Master Python fundamentals and data structures
@@ -13,7 +113,7 @@ This repository is your guided path to becoming a modern Python developer and bu
 - Build, package, document, and test a production-grade project
 
 ## 📚 Curriculum Outline
-Below is the study plan derived from the roadmap PDF and organized into weekly sprints. Each section links to tasks and exercises in `/exercises` and milestones in the capstone project.
+The following is a broader study plan inspired by the roadmap. Topics beyond the linked learning folders, exercises, and the capstone are future goals rather than completed materials.
 
 ### 1) Learn the Basics
 - Basic syntax, variables & data types
@@ -80,7 +180,7 @@ Below is the study plan derived from the roadmap PDF and organized into weekly s
 
 ---
 
-## 🏗 Capstone Project: **DataHub 360**
+## 🏗 Future Capstone Project: **DataHub 360**
 
 A production-grade **data-driven web service** with:
 - **FastAPI** backend (ASGI) + async I/O
